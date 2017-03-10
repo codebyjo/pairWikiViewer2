@@ -1,0 +1,121 @@
+	html {
+	  font-family: Arial;
+	}
+	
+	.wrapper {
+	  width: 100%;
+	}
+	
+	header {
+	  width: 100%;
+	  height: 100px;
+	  /*background-color:#f2f2f2;*/
+	  margin-bottom: 60px;
+	}
+
+	.foundArticles {
+		width:80;
+		border-color: #ff00ff;
+	}
+	
+	.left {
+	  float: left;
+	  margin-left: 20px;
+	}
+	
+	.right {
+	  float: right;
+	  margin-right: 20px;
+	}
+	
+	.logo img {
+	  display: block;
+	  margin: auto;
+
+	}
+	
+	.search {
+	  width: 492px;
+	  height: 41px;
+	  margin: auto;
+	  display: block;
+
+	}
+	
+	#searchBox {
+    font-size: 16px;
+	  width: 478px;
+	  height: 35px;
+	  margin: auto;
+    padding-left: 9px;
+	}
+	
+	.searchButtons {
+	  margin: auto;
+	  display: block;
+	  height: 36px;
+	  width: 285px;
+	  margin: auto;
+	  margin-top: 20px;
+	}
+	
+	.button {
+	  font-family: Arial;
+	  font-size: 13px;
+	  font-weight: bold;
+    color: rgb(117, 117, 117);
+	  display: inline;
+    width: 140px;
+	  height: 36px;
+	  border: none;
+	  background: #f2f2f2;
+	  padding: 0 10px;
+	}
+	
+	footer {
+	  position: static;
+	  bottom: 0;
+	  height: 60px;
+	  padding: 100px 0 20px 0;
+	  width: 100%;
+	  /*background-color:#f2f2f2;*/
+	  clear: both;
+	  display: block;
+	  z-index: -1;
+	  /*border-top: 1px solid #e4e4e4;*/
+	}
+	
+	.credit {
+	  display: inline-block;
+	  margin: 30px;
+	}
+	
+	li {
+	  font-size: 13px;
+	}
+	
+	.credit a {
+	  text-decoration: none;
+	  color: #404040;
+	}
+	
+	.credit a:hover {
+    color: cornflowerblue;
+	  text-decoration: none;
+	}
+
+	#ui-id-1 {
+  	font-family: 'Arial', sans-serif;
+  	background-color: white;
+	}
+
+	#ui-id-1 li {
+  	margin: 5px;
+  	font-size: 16px;
+  	font-family: Arial;
+	}
+
+	.ui-menu-item-wrapper {
+		background: white;
+	}
+
