@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>pairWikiViewer brought to you by Jo &amp; Ed, and Wikipedia!</title>
+  <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset200802.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="headerSecondPage">
+			<div class="squareLogo">
+				<a href="."><img src="images/Wikipedia-logo-wordmark.png" alt="Wikipedia Logo" ></a>
+				 <input type="text" id="searchBoxResults">
+      					<button id="normalSearchResults" type="submit">
+      							<i class="fa fa-search" aria-hidden="true"></i>
+      					</button>
+			</div>
+
+      				
+
+    			</div>
+    			<div style="border-bottom: 1px solid rgb(235, 235, 235); height: 60px; padding-left: 200px;">\
+      				<ul>
+        				<li style="width: 30px; font-size: 13px; font-weight: 600; height: 58px; text-align: center; border-bottom: 3px solid rgb(66, 133, 244); color: rgb(66, 133, 244); line-height: 60px; vertical-align: middle;">All</li>\
+      				</ul>
+		</header>
+
+		<article>
+
+			<div class="logo">
+				<img src="images/Wikipedia-logo-wordmark.png" alt="Wikipedia Logo"/>
+			</div>
+
+			<div class="search">
+				<input type="text" id="searchBox" />
+			</div>
+
+			<div class="searchButtons">
+				<input class="button" id="normalSearch" value="Wikipedia Search" type="submit"/>
+				<input class="button" id="luckySearch" value="I'm Feeling Lucky" type="submit"/>
+			</div>
+
+		<div class="foundArticles"></div>
+
+
+    </article>
+
+        var htmlOutput = '\
+    <p style="font-size: 13px; padding-left: 200px; margin-top: -20px; margin-bottom: 20px; color: #808080;">About ' + arrayInput.length + ' results</p>\
+    ';
+
+    for (var i=0; i<arrayInput.length; i++) {
+      htmlOutput += '\
+        <div style="width: 635px; padding-left: 190px;">\
+          <div style="width: 100%; padding: 10px; font-size: 14px;">\
+            <a style="font-family: arial, sans-serif; line-height: 1.2em; font-weight: normal; text-decoration: none; font-size: 19px;" href="https://en.wikipedia.org/wiki/' + arrayInput[i].title + '"target="_blank">\
+              <h3 style="line-height: 1.2em;">' + arrayInput[i].title + '</h3>\
+            </a>\
+            <p style="font-family: Arial, sans-serif; color: #008029; line-height: 1.2em; font-size: 15px; ">https://en.wikipedia.org/wiki/' + arrayInput[i].title + '</p>\
+            <p style="line-height: 1.4em;">' + arrayInput[i].snippet + '</p>\
+          </div>\
+        </div>';
+    }
+
+    return htmlOutput
+  };
+  
+
+
+
+    <footer class="resultFooter">
+		  <ul>
+        <li class= "credit right">Made by: <a href="https://www.freecodecamp.com/eagarcia8">Eduardo Garcia</a> &amp; <a href="https://www.freecodecamp.com/codebyjo">Joanne Dang</a> | <a href="http://www.wikipedia.com">Data from Wikipedia</a></li>
+		  </ul>
+		</footer>
+
+  </div>
+
+   <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <script src="js/app.js"></script>
+
+</body>
+</html>
